@@ -1,0 +1,18 @@
+<div class="container-fluid">
+  <div class="col-md-10 offset-md-1 p-3">
+    <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link {% if homeActive %}active{% endif %}" aria-current="page" href="{% url 'home' %}">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link {% if list_itemActive %}active{% endif %}" href="{% url 'list_item' %}">List Item</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link {% if add_itemActive %}active{% endif %}" href="{% url 'add_item' %}">Add Item</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    </li>
+    </ul>
+  </div>
+</div>
